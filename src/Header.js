@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles.css";
+import './App.css';
 import City from "./City";
 import Today from "./Today";
 
