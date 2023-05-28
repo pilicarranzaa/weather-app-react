@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import './App.css';
 import Forecast from "./Forecast";
-import { searchForecast } from "./search";
+import { searchWeather } from "./search";
 
 
 export default function NextDays(props) {
@@ -132,7 +132,7 @@ export default function NextDays(props) {
     </div>
   );
   } else {
-    searchForecast(props.city, handleResponse);
+    searchWeather(props.city, handleResponse);
     return "Loading...";
   }  
 }
