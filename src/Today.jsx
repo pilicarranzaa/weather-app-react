@@ -3,6 +3,7 @@ import './App.css';
 import CurrentDate from "./CurrentDate";
 import changeBg from "./changeBg";
 import { searchWeather } from "./search";
+import WeatherTemperature from "./WeatherTemperature";
 
 
 export default function Today(props) {
@@ -62,20 +63,7 @@ export default function Today(props) {
       <div className="today bd">
       <div className="today-data px-3 py-1">
           <h2 id="currentHour"><CurrentDate date={weatherData.date} showOnlyHour /></h2>
-        <div className="d-flex align-items-start">
-          <h1 className="temperature" id="currentTemp">
-          {Math.round(weatherData.temperature)}
-          </h1>
-          <div className="units">
-            <a href="\" className="celsius">
-              ºC
-            </a>
-            <span />
-            <a href="\" className="farenheit">
-              ºF
-            </a>
-          </div>
-        </div>
+          <WeatherTemperature celsius={weatherData.temperature} />
       </div>
       <div className="mainImg">
         <img
