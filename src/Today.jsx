@@ -32,7 +32,7 @@ export default function Today(props) {
       country: response.data.sys.country,
       coordinates: response.data.coord
           });
-          
+
     changeBg(mainDescription, pod);
   }
 
@@ -71,7 +71,7 @@ export default function Today(props) {
             <span className="temperature" id="minT">
             {weatherData.minTemp}
             </span>
-            º /
+            º /{' '}
             <span className="max temperature" id="maxT">
             {weatherData.maxTemp}
             </span>
@@ -116,7 +116,8 @@ export default function Today(props) {
               autoComplete="off"
               onChange={handleCityChange}
             />
-            <button className="search" type="submit">
+            {' '}
+            <button className="search" type="submit"> 
               <i className="fa-solid fa-magnifying-glass"></i>
             </button>
           </row>

@@ -5,7 +5,7 @@ export default function Sign() {
   return (
     <div className="code">
       <a
-        href="https://github.com/pilicarranzaa/pilar-shecodes-project"
+        href="https://github.com/pilicarranzaa/weather-app-react"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -19,6 +19,14 @@ export default function Sign() {
       >
         Pilar Carranza
       </a>
+      {' '}and{' '}
+          <a
+            href="https://pca-weather-app-react.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            hosted on Netlify
+          </a>
     </div>
   );
 }
