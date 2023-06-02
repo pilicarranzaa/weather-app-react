@@ -53,5 +53,5 @@ export default function changeBg(mainDescription, pod) {
       let bg = document.querySelector(".body");
       bg.removeAttribute("class");
       bg.classList.add(`container`, `body`, `py-3`, `nCloud`);
-    };
+    } 
   }

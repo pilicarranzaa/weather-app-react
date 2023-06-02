@@ -1,12 +1,12 @@
 import React from "react";
 
 export const days = [
-  `SUN`,
-  `MON`,
-  `TUE`,
-  `WED`,
-  `THU`,
-  `FRI`,
+  `Sunday`,
+  `Monday`,
+  `Tuesday`,
+  `Wednesday`,
+  `Thursday`,
+  `Friday`,
   `Saturday`
 ];
 export const months = [
@@ -31,6 +31,10 @@ export default function CurrentDate({ date, showOnlyHour = false }) {
       let year = date.getFullYear().toString().slice(-2);
       let hours = date.getHours();
       let minutes = date.getMinutes();
+
+      if (dateStr <10) {
+        dateStr = `0${dateStr}`;
+    }
 
       if (hours <10) {
           hours = `0${hours}`;
